@@ -1,0 +1,5 @@
+.body {
+  --background-main-color: linear-gradient(180deg, #F4F2EC 0%, #E2DBD7 100%);
+  --text-main-color: #333;
+  --text-green: #307632;
+}
