@@ -19,7 +19,7 @@ body {
   font-style: normal;
 
   background: var(--background-main-color);
-  color: var(--text-main-color);
+  color: var(--main-color);
 }
 
 a {
@@ -39,6 +39,7 @@ h1, h2, h3, p, figure, fieldset {
 
 fieldset {
   border: none;
+  padding: 0;
 }
 
 button {
@@ -47,6 +48,15 @@ button {
 
 .container {
   margin: 0 auto;
-  max-width: 1660px;
+  max-width: 1860px;
   padding: 0 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-color);
 }

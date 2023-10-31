@@ -1,0 +1,144 @@
+.wrapper {
+  background: var(--main-color);
+}
+
+.callback {
+  position: absolute;
+  width: 721px;
+  border-radius: 25px;
+  background: var(--accent-white);
+  filter: drop-shadow(0px 18px 45px rgba(147, 147, 147, 0.60));
+  padding: 42px 50px 65px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.callback__icon-close {
+  background: transparent;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 29px;
+  right: 30px;
+}
+
+.callback__title {
+  color: var(--accent-green);
+  font-family: 'Roboto Slab', serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.callback__info {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.callback__group {
+  margin-bottom: 15px;
+}
+
+.callback__group:last-of-type {
+  margin-bottom: 34px;
+}
+
+.callback__group--marginb-33 {
+  margin-bottom: 33px;
+}
+
+.callback__label {
+  display: block;
+  color: #36494F;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+.callback__label:last-child {
+  margin-bottom: 0;
+}
+
+.callback__label--font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+.callback__input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 15px 19px;
+}
+
+.callback__input::placeholder {
+  line-height: 30px;
+  color: #36494F;
+}
+
+.callback__input--font-manrope::placeholder {
+  font-family: 'Manrope', sans-serif;
+}
+
+.callback__checkbox {
+  position: relative;
+  margin-right: 50px;
+  appearance: none;
+  z-index: 2;
+}
+
+.callback__checkbox::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 3px solid #109E4C;
+}
+
+.callback__arrow {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+}
+
+.callback__arrow::after {
+  content: '';
+  background: url(../img/arrow.svg);
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  display: none;
+  top: 10px;
+  left: 8px;
+  z-index: 1;
+}
+
+.callback__checkbox:checked + .callback__arrow::after {
+  display: block;
+}
+
+.callback__group:last-of-type {
+  display: flex;
+}
+
+.callback__policy {
+  color: #109E4C;
+  border-bottom: 1px solid #109E4C;
+}
+
+.callback__button {
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  color: var(--accent-white);
+  background: var(--accent-green);
+  box-shadow: 0px 10px 25px 0px rgba(48, 118, 50, 0.50);
+  padding: 31px 77px;
+}

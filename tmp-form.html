@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <div class="overlay">
+      <form action="index.php" class="callback-form callback" method="post">
+        <button type="button" class="callback__icon-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <g clip-path="url(#clip0_16_675)">
+            <path d="M17.7484 15.0246L29.43 3.34283C30.1901 2.58296 30.1901 1.35433 29.43 0.594557C28.6701 -0.165308 27.4415 -0.165308 26.6817 0.594557L14.9999 12.2763L3.31844 0.594557C2.55821 -0.165308 1.33004 -0.165308 0.570172 0.594557C-0.190057 1.35442 -0.190057 2.58296 0.570172 3.34283L12.2515 15.0246L0.570263 26.7063C-0.189966 27.4662 -0.189966 28.6948 0.570263 29.4546C0.750507 29.6353 0.964691 29.7787 1.20051 29.8764C1.43633 29.9741 1.68913 30.0243 1.9444 30.024C2.44186 30.024 2.93951 29.8336 3.31853 29.4546L14.9999 17.7729L26.6817 29.4546C26.862 29.6353 27.0762 29.7786 27.312 29.8764C27.5478 29.9741 27.8006 30.0243 28.0559 30.024C28.5533 30.024 29.051 29.8336 29.43 29.4546C30.1901 28.6947 30.1901 27.4662 29.43 26.7063L17.7484 15.0246Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_16_675">
+            <rect width="30" height="30" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <h3 class="callback__title">Оставить заявку</h3>
+
+        <p class="callback__info">В ближайшее время с вами свяжутся для уточнения деталей</p>
+
+        <fieldset class="callback__group">
+          <label for="personName" class="callback__label">Контактное лицо*</label>
+          <input type="text" id="personName" class="callback__input" placeholder="Укажите ФИО" required>
+        </fieldset>
+
+        <fieldset class="callback__group">
+          <label for="phoneNumber" class="callback__label">Контактный телефон*</label>
+          <input type="text" id="phoneNumber" class="callback__input" placeholder="+7(xxx)xxx-xx-xx" required>
+        </fieldset>
+
+        <fieldset class="callback__group">
+          <label for="email" class="callback__label">Электронная почта*</label>
+          <input type="email" id="email" class="callback__input" placeholder="email@email.ru" required>
+        </fieldset>
+
+        <fieldset class="callback__group callback__group--marginb-33">
+          <label for="message" class="callback__label callback__label--font-manrope">Комментарий</label>
+          <textarea type="text" id="message" class="callback__input callback__input--font-manrope" placeholder="Ваше сообщение" rows="4"></textarea>
+        </fieldset>
+
+        <fieldset class="callback__group">
+          <input type="checkbox" id="policy" class="callback__checkbox">
+          <span class="callback__arrow"></span>
+          <label for="policy" class="callback__label">Cогласие с 
+            <a href="#" class="callback__policy">политикой конфиденциальности</a>
+          </label>
+        </fieldset>
+
+        <button type="submit" id="callbackButton" class="callback__button">Оставить заявку</button>
+      </form>
+  </div>
+</body>
+</html>
