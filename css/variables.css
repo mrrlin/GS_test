@@ -5,4 +5,6 @@
   --accent-white: #fff;
 
   --font-size-24: 24px;
+
+  --box-shadow-common: 0px 5px 35px 0px rgba(0, 0, 0, 0.20);
 }

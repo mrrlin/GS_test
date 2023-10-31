@@ -83,6 +83,7 @@
 .section {
   padding: 49px;
   background-color: var(--accent-white);
+  box-shadow: var(--box-shadow-common);
 }
 
 .container__tmp {
